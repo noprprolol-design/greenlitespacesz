@@ -57,12 +57,12 @@ export default function PamulangLibraryPage() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Tentang Perpustakaan Pamulang</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4"style={{ textAlign: "justify" }}>
               Perpustakaan Pamulang mengusung konsep sustainable design dengan penggunaan panel surya dan sistem
               pencahayaan hemat energi. Bangunan dengan fasad kaca modern ini menawarkan pemandangan yang luas dan
               suasana belajar yang nyaman.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4"style={{ textAlign: "justify" }}>
               Dilengkapi dengan teknologi digital terkini, perpustakaan ini menyediakan akses e-library 24/7 dan ruang
               multimedia untuk berbagai kegiatan pembelajaran.
             </p>

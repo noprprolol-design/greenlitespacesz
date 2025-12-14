@@ -1,0 +1,113 @@
+[00:00:11.647] Server  LOG      ✓ Ready in 8.4s
+[00:00:14.668] Server  LOG      ○ Compiling / ...
+[00:00:26.427] Server  WARN     ⚠ Cross origin request detected from 10.5.58.140 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:26.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:26.650] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:26.650] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:26.650] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765703483380}
+[00:00:26.814] Browser WARN    Image with src "/bintaroy.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:03:17.040] Server  LOG      ✓ Compiled in 3.9s
+[00:03:58.223] Server  LOG      ✓ Compiled in 253ms
+[00:04:03.475] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:03.600] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:04:03.600] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:04:03.600] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765703700349}
+[00:04:03.937] Browser WARN    Image with src "/bintaroy.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:05:16.509] Server  LOG      ✓ Compiled in 736ms
+[00:07:14.043] Server  LOG      ✓ Compiled in 947ms
+[00:08:00.429] Server  LOG      ✓ Compiled in 986ms
+[00:08:07.281] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:07.408] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:07.408] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:08:07.408] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765703944155}
+[00:08:07.687] Browser WARN    Image with src "/bintaroy.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:08:29.780] Server  LOG      ✓ Compiled in 90ms
+[00:08:34.869] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:35.043] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:35.043] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:08:35.043] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765703971791}
+[00:09:04.983] Server  LOG      ✓ Compiled in 99ms
+[00:09:09.637] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:09.755] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:09.755] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:09:09.755] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704006504}
+[00:09:37.160] Server  LOG      ○ Compiling /perpustakaan/pamulang ...
+[00:09:40.525] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:09:40.525] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/perpustakaan/pamulang color: rgb(120, 120, 120) color: inherit {"dp":"/perpustakaan/pamulang","o":"http://10.5.58.140:3000/perpustakaan/pamulang","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704037249}
+[00:10:10.527] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704067275}
+[00:10:13.043] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/perpustakaan/bintaro color: rgb(120, 120, 120) color: inherit {"dp":"/perpustakaan/bintaro","o":"http://10.5.58.140:3000/perpustakaan/bintaro","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704069787}
+[00:17:08.320] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704484764}
+[00:18:32.635] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/perpustakaan/bintaro color: rgb(120, 120, 120) color: inherit {"dp":"/perpustakaan/bintaro","o":"http://10.5.58.140:3000/perpustakaan/bintaro","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704569380}
+[00:18:34.953] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704571700}
+[00:21:40.953] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/perpustakaan/bintaro color: rgb(120, 120, 120) color: inherit {"dp":"/perpustakaan/bintaro","o":"http://10.5.58.140:3000/perpustakaan/bintaro","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704757694}
+[00:23:17.059] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704853805}
+[00:23:37.133] Server  LOG      ○ Compiling /tentang-kami ...
+[00:23:38.866] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/tentang-kami","o":"http://10.5.58.140:3000/tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704875613}
+[00:23:49.548] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765704886296}
+[00:25:29.904] Server  LOG      ✓ Compiled in 1135ms
+[00:25:44.494] Server  LOG      ✓ Compiled in 201ms
+[00:26:02.634] Server  LOG      ✓ Compiled in 106ms
+[00:26:10.565] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/tentang-kami","o":"http://10.5.58.140:3000/tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705027311}
+[00:28:50.412] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/#tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/#tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705187154}
+[00:29:39.441] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/tentang-kami","o":"http://10.5.58.140:3000/tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705236188}
+[00:33:43.273] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/#tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/#tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705480020}
+[00:34:08.866] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/perpustakaan/bintaro color: rgb(120, 120, 120) color: inherit {"dp":"/perpustakaan/bintaro","o":"http://10.5.58.140:3000/perpustakaan/bintaro","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705505613}
+[00:34:17.570] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705514316}
+[00:34:20.121] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/tentang-kami","o":"http://10.5.58.140:3000/tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705516866}
+[00:34:37.748] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/#tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/#tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705534495}
+[00:38:46.733] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/perpustakaan/bintaro color: rgb(120, 120, 120) color: inherit {"dp":"/perpustakaan/bintaro","o":"http://10.5.58.140:3000/perpustakaan/bintaro","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705783481}
+[00:38:48.303] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/#tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/#tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705785051}
+[00:38:50.809] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/perpustakaan/bintaro color: rgb(120, 120, 120) color: inherit {"dp":"/perpustakaan/bintaro","o":"http://10.5.58.140:3000/perpustakaan/bintaro","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705787555}
+[00:38:54.014] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765705790760}
+[00:39:14.519] Server  LOG      ✓ Compiled in 1082ms
+[00:39:42.116] Server  LOG      ✓ Compiled in 392ms
+[00:39:58.563] Server  LOG      ✓ Compiled in 112ms
+[00:40:20.105] Server  LOG      ✓ Compiled in 81ms
+[00:40:30.834] Server  LOG      ✓ Compiled in 452ms
+[00:41:44.099] Server  LOG      ✓ Compiled in 1427ms
+[00:41:44.294] Browser ERROR   ./GreenLiteSpaceZz/components/product-showcase.tsx:63:5
+Parsing ecmascript source code failed
+  61 |         </div>
+  62 |       </div>
+> 63 |     </section>
+     |     ^
+  64 |   )
+  65 | }
+  66 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./GreenLiteSpaceZz/components/product-showcase.tsx
+    ./GreenLiteSpaceZz/app/page.tsx
+[00:41:44.294] Browser ERROR   ./GreenLiteSpaceZz/components/product-showcase.tsx:63:6
+Parsing ecmascript source code failed
+  61 |         </div>
+  62 |       </div>
+> 63 |     </section>
+     |      ^^^^^^^^^
+  64 |   )
+  65 | }
+  66 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./GreenLiteSpaceZz/components/product-showcase.tsx
+    ./GreenLiteSpaceZz/app/page.tsx
+[00:42:48.294] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/tentang-kami","o":"http://10.5.58.140:3000/tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765706025041}
+[00:45:58.767] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/#tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/#tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765706215510}
+[00:46:29.040] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/tentang-kami","o":"http://10.5.58.140:3000/tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765706245786}
+[00:46:37.278] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/#tentang-kami color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/#tentang-kami","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765706254024}
+[00:46:40.466] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/perpustakaan/bintaro color: rgb(120, 120, 120) color: inherit {"dp":"/perpustakaan/bintaro","o":"http://10.5.58.140:3000/perpustakaan/bintaro","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765706257211}
+[00:46:51.263] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765706268006}
+[00:46:58.589] Server  LOG      ○ Compiling /login ...
+[00:46:59.554] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://10.5.58.140:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765706276300}
+[00:47:04.020] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://10.5.58.140:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765706280765}
+[00:47:06.487] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.5.58.140:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.5.58.140:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765706283233}

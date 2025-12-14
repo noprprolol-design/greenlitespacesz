@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/perpustakaan/bintaro/page": "app/perpustakaan/bintaro/page.js",
+  "/perpustakaan/pamulang/page": "app/perpustakaan/pamulang/page.js",
+  "/register/page": "app/register/page.js",
+  "/tentang-kami/page": "app/tentang-kami/page.js"
+}

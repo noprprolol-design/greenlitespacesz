@@ -9,14 +9,14 @@ export default function BintaroLibraryPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const galleryImages = [
-    { src: "/modern-library-reading-room-with-natural-light.jpg", alt: "Ruang Baca Modern" },
-    { src: "/library-vertical-garden-green-wall-architecture.jpg", alt: "Vertical Garden" },
-    { src: "/modern-library-study-area-with-computers.jpg", alt: "Area Belajar dengan Komputer" },
-    { src: "/bintaro-library-modern-architecture.jpg", alt: "Eksterior Perpustakaan" },
-    { src: "/modern-library-glass-facade-natural-lighting.jpg", alt: "Fasad Kaca dengan Cahaya Alami" },
-    { src: "/digital-library-multimedia-room-with-computers.jpg", alt: "Ruang Multimedia Digital" },
-    { src: "/modern-coworking-space-in-library.jpg", alt: "Co-Working Space" },
-    { src: "/luxury-library-wooden-facade-elegant-design.jpg", alt: "Interior Elegan" },
+    { src: "/foto1bintaro.jpg", alt: "kontol Baca Modern" },
+    { src: "/foto2bintaro.jpg", alt: "Vertical Garden" },
+    { src: "/foto3bintaro.jpg", alt: "Area Belajar dengan Komputer" },
+    { src: "/foto4bintaros.jpg", alt: "Eksterior Perpustakaan" },
+    { src: "/foto1bintaro.jpg", alt: "Fasad Kaca dengan Cahaya Alami" },
+    { src: "/foto2bintaro.jpg", alt: "Ruang Multimedia Digital" },
+    { src: "/foto3bintaro.jpg", alt: "Co-Working Space" },
+    { src: "/foto4bintaros.jpg", alt: "Interior Elegan" },
   ]
 
   const nextImage = () => {
@@ -30,17 +30,17 @@ export default function BintaroLibraryPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-12 sm:py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 mb-4 sm:mb-6 hover:opacity-80 transition text-sm sm:text-base"
+            className="inline-flex items-center gap-2 mb-4 sm:mb-6 hover:opacity-80 transition text-sm sm:text-base text-center"
           >
-            <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+            <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 " />
             Kembali ke Beranda
           </Link>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">Perpustakaan Bintaro</h1>
-          <p className="text-base sm:text-lg md:text-xl text-cyan-50">
-            Bintarolite - Perpustakaan Modern dengan Arsitektur Berkelanjutan
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-center">Perpustakaan Bintaro</h1>
+          <p className="text-base sm:text-lg md:text-xl text-cyan-50 text-center">
+            Bintaro- Perpustakaan Modern dengan Arsitektur Berkelanjutan
           </p>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function BintaroLibraryPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="relative h-64 sm:h-80 md:h-96 rounded-lg sm:rounded-2xl overflow-hidden mb-8 sm:mb-12 shadow-xl">
           <Image
-            src="/bintaro-library-modern-architecture.jpg"
+            src="/bintaroy.jpg"   // <<< FIX SUDAH GUA GANTI
             alt="Perpustakaan Bintaro"
             fill
             className="object-cover"
@@ -60,11 +60,11 @@ export default function BintaroLibraryPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Tentang Perpustakaan Bintaro</h2>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4" style={{ textAlign: "justify" }}>
               Perpustakaan Bintaro adalah fasilitas perpustakaan modern yang menggabungkan konsep green building dengan
               teknologi terkini. Bangunan ini dirancang dengan vertical garden yang menciptakan suasana sejuk dan asri.
             </p>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4" style={{ textAlign: "justify" }}>
               Dengan luas 3.500 m², perpustakaan ini dapat menampung hingga 500 pengunjung sekaligus dan menyediakan
               lebih dari 50.000 koleksi buku fisik dan digital.
             </p>
@@ -112,11 +112,11 @@ export default function BintaroLibraryPage() {
 
         {/* Gallery */}
         <div className="mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Galeri Foto</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">Manufaktur Frame</h2>
           <div className="relative">
             <div className="relative h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-lg sm:rounded-2xl overflow-hidden shadow-xl bg-gray-900">
               <Image
-                src={galleryImages[currentImageIndex].src || "/placeholder.svg"}
+                src={galleryImages[currentImageIndex].src || "/foto4bintaro.jpg"}
                 alt={galleryImages[currentImageIndex].alt}
                 fill
                 className="object-cover"
@@ -163,10 +163,11 @@ export default function BintaroLibraryPage() {
 
         {/* Architecture Details */}
         <div className="bg-white rounded-lg sm:rounded-xl p-6 sm:p-8 shadow-lg">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Detail Arsitektur & Konstruksi</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">Detail Arsitektur & Konstruksi</h2>
+          <br></br>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Konsep Desain</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 text-center">Konsep Desain</h3>
               <ul className="space-y-2 text-sm sm:text-base text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-cyan-500 font-bold">•</span>
@@ -187,7 +188,7 @@ export default function BintaroLibraryPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Spesifikasi Bangunan</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 text-center">Spesifikasi Bangunan</h3>
               <ul className="space-y-2 text-sm sm:text-base text-gray-700">
                 <li className="flex justify-between">
                   <span className="font-semibold">Luas Bangunan:</span>

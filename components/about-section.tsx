@@ -13,7 +13,7 @@ export default function AboutSection() {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/YyBfMY3_dKg?si=Scewhn2nSjEH0UIa"
+                src="https://www.youtube.com/embed/YyBfMY3_dKg" // 🔴 DIGANTI DI SINI
                 title="GreenLiteSpace Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -28,7 +28,7 @@ export default function AboutSection() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
               Selangkah Kemana Saja
             </h2>
-            <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">
+            <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed"style={{ textAlign: "justify" }}>
               Bukan hanya sebuah rumah, GreenLiteSpace membangun tempat tinggal yang terintegrasi dengan berbagai
               fasilitas. Bagai sebuah orkestra yang dilengkapi dengan konsep co-living yang terjalin harmonis, hunian di
               GreenLiteSpace sangat sesuai dengan era milenium saat ini.

@@ -36,8 +36,8 @@ export default function CiputatLibraryPage() {
             <ArrowLeft className="w-5 h-5" />
             Kembali ke Beranda
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Perpustakaan Ciputat</h1>
-          <p className="text-xl text-cyan-50">Ciputatlit - Perpustakaan Premium dengan Desain Elegan</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">Perpustakaan Ciputat</h1>
+          <p className="text-xl text-cyan-50 text-center">Ciputat - Perpustakaan Premium dengan Desain Elegan</p>
         </div>
       </div>
 
@@ -52,12 +52,12 @@ export default function CiputatLibraryPage() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Tentang Perpustakaan Ciputat</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4"style={{ textAlign: "justify" }}>
               Perpustakaan Ciputat menampilkan desain premium dengan fasad kayu vertikal yang menciptakan kesan hangat
               dan elegan. Bangunan ini dirancang untuk memberikan pengalaman membaca yang eksklusif dengan interior
               berkelas.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4"style={{ textAlign: "justify" }}>
               Dengan koleksi buku langka dan area VIP lounge, perpustakaan ini menjadi destinasi favorit para peneliti
               dan pencinta literatur premium.
             </p>
@@ -105,7 +105,7 @@ export default function CiputatLibraryPage() {
 
         {/* Gallery */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Galeri Foto</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Galeri Foto</h2>
           <div className="relative">
             {/* Main Image */}
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl bg-gray-900">
@@ -157,10 +157,12 @@ export default function CiputatLibraryPage() {
 
         {/* Architecture Details */}
         <div className="bg-white rounded-xl p-8 shadow-lg">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Detail Arsitektur & Konstruksi</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb- text-center">Detail Arsitektur & Konstruksi</h2>
+          <br></br>
+          <br></br>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Konsep Desain</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Konsep Desain</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-cyan-500 font-bold">•</span>
@@ -181,7 +183,7 @@ export default function CiputatLibraryPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Spesifikasi Bangunan</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Spesifikasi Bangunan</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex justify-between">
                   <span className="font-semibold">Luas Bangunan:</span>

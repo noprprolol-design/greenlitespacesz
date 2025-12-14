@@ -7,22 +7,22 @@ const libraries = [
   {
     id: 1,
     name: "Bintaro",
-    subtitle: "Bintarolite",
-    image: "/bintaro-library-modern-architecture.jpg",
+    subtitle: "Graha Raya",
+    image: "/bintaroy.jpg",
     link: "/perpustakaan/bintaro",
   },
   {
     id: 2,
     name: "Pamulang",
-    subtitle: "Pamulanglit",
+    subtitle: "Pamulang",
     image: "/pamulang-library-sustainable-design.jpg",
     link: "/perpustakaan/pamulang",
   },
   {
     id: 3,
     name: "Ciputat",
-    subtitle: "Ciputatlit",
-    image: "/ciputat-library-premium-building.jpg",
+    subtitle: "Ciputat",
+    image: "/bintarok.jpg",
     link: "/perpustakaan/ciputat",
   },
 ]
@@ -33,10 +33,12 @@ export default function ProductShowcase() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Perpustakaan Terbaru */}
         <div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">Perpustakaan Terbaru</h2>
-          <p className="text-sm sm:text-base text-gray-600 mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 text-center">Perpustakaan Terbaru</h2>
+          <br></br>
+          <p className="text-sm sm:text-base text-gray-600 mb-8 text-center">
             Perpustakaan terbaru dari GreenLiteSpace. Semakin lengkap dengan lingkungan hijau dan fasilitas lengkap.
           </p>
+          <br></br>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6">
             {libraries.map((library) => (
               <Link
