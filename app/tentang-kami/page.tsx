@@ -1,4 +1,4 @@
-import { ArrowLeft, Building2, Users, Target, Award } from "lucide-react"
+import { ArrowLeft, Building2, Users, Target, Award, BookOpen, Wifi, Coffee } from "lucide-react"
 import Link from "next/link"
 
 export default function TentangKamiPage() {
@@ -21,23 +21,11 @@ export default function TentangKamiPage() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
-        {/* About Description */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Tentang GreenLitSpace</h2>
-          <br></br>
-          <div className="prose prose-lg max-w-none text-gray-600">
-            <p className="mb-6 leading-relaxed" style={{ textAlign: "justify" }}>
-              GreenLitSpace adalah pengembang perpustakaan modern yang berkomitmen untuk menghadirkan ruang belajar yang inovatif, nyaman, dan berkelanjutan. Kami merancang perpustakaan yang tidak hanya berfungsi sebagai tempat membaca, tetapi juga sebagai ruang inspiratif yang mendukung peningkatan literasi, kreativitas, dan kolaborasi di berbagai komunitas.
-              Dengan mengutamakan desain ramah lingkungan serta integrasi teknologi terkini, GreenLiteSpace berfokus pada penciptaan perpustakaan masa depan yang relevan dengan kebutuhan generasi saat ini. Setiap proyek yang kami kembangkan memenuhi standar kualitas tinggi untuk memberikan pengalaman belajar yang aman, nyaman, dan efektif bagi seluruh pengguna.
-            </p>
-          </div>
-        </div>
 
-        {/* Vision & Mission - DI TENGAH */}
+        {/* Vision & Mission */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Visi & Misi</h2>
-          <br></br>
+          <br />
           <div className="flex flex-col md:flex-row justify-center items-center gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md">
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mb-6 mx-auto">
@@ -68,7 +56,7 @@ export default function TentangKamiPage() {
         {/* Key Features */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Keunggulan Kami</h2>
-          <br></br>
+          <br />
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -101,9 +89,9 @@ export default function TentangKamiPage() {
         </div>
 
         {/* Video Section */}
-        <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
+        <div className="bg-gray-50 rounded-2xl p-8 md:p-12 mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Video Profil GreenLitSpace</h2>
-          <br></br>
+          <br />
           <div className="max-w-4xl mx-auto">
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-gray-200 shadow-xl">
               <iframe
@@ -119,6 +107,105 @@ export default function TentangKamiPage() {
             </div>
           </div>
         </div>
+
+        {/* ===== BAGIAN INI DI BAWAH ===== */}
+        
+        {/* Fasilitas Utama */}
+        <div className="mb-10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Fasilitas Utama</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+              <div className="flex items-start gap-3">
+                <BookOpen className="w-5 h-5 text-cyan-500 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-gray-900">Koleksi Lengkap</h4>
+                  <p className="text-sm text-gray-600 mt-1">50.000+ buku fisik dan digital</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+              <div className="flex items-start gap-3">
+                <Users className="w-5 h-5 text-cyan-500 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-gray-900">Ruang Baca</h4>
+                  <p className="text-sm text-gray-600 mt-1">Kapasitas 500 pengunjung</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+              <div className="flex items-start gap-3">
+                <Wifi className="w-5 h-5 text-cyan-500 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-gray-900">WiFi Gratis</h4>
+                  <p className="text-sm text-gray-600 mt-1">High-speed internet untuk semua area</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+              <div className="flex items-start gap-3">
+                <Coffee className="w-5 h-5 text-cyan-500 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-gray-900">Kafe & Lounge</h4>
+                  <p className="text-sm text-gray-600 mt-1">Area santai dengan F&B</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Architecture Details */}
+        <div className="bg-white rounded-lg sm:rounded-xl p-6 shadow-lg">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Detail Arsitektur & Konstruksi</h2>
+          <br />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 text-center">Konsep Desain</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan-500 font-bold">•</span>
+                  <span>Arsitektur modern minimalis dengan elemen hijau</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan-500 font-bold">•</span>
+                  <span>Penggunaan material ramah lingkungan</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan-500 font-bold">•</span>
+                  <span>Ventilasi alami dan pencahayaan optimal</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan-500 font-bold">•</span>
+                  <span>Sistem pengelolaan air hujan</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 text-center">Spesifikasi Bangunan</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex justify-between">
+                  <span className="font-semibold">Luas Bangunan:</span>
+                  <span>3.500 m²</span>
+                </li>
+                <li className="flex justify-between">
+                  <span className="font-semibold">Jumlah Lantai:</span>
+                  <span>4 Lantai</span>
+                </li>
+                <li className="flex justify-between">
+                  <span className="font-semibold">Tahun Selesai:</span>
+                  <span>2024</span>
+                </li>
+                <li className="flex justify-between">
+                  <span className="font-semibold">Sertifikasi:</span>
+                  <span className="text-gray-700">Green Building</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   )
