@@ -11,7 +11,7 @@ export default function Footer() {
           
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-black">GreenLiteSpace</h3>
+            <h3 className="text-xl font-bold mb-4 text-black">GreenLitSpace</h3>
             <p className="text-black text-sm mb-4">
               Membangun tempat literasi yang terintegrasi dengan berbagai fasilitas modern.
             </p>
@@ -60,7 +60,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-2">
                 <Mail size={16} className="mt-1 flex-shrink-0" />
-                <span>GreenLiteSpace@Gmail.com</span>
+                <span>GreenLitSpace@Gmail.com</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
@@ -73,7 +73,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-black">
-          <p>&copy; 2025 GreenLiteSpace. All rights reserved.</p>
+          <p>&copy; 2025 GreenLitSpace. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="#" className="hover:opacity-70 transition">Privacy Policy</Link>
             <Link href="#" className="hover:opacity-70 transition">Terms of Service</Link>
@@ -83,7 +83,7 @@ export default function Footer() {
 
       {/* WhatsApp Button */}
       <a
-        href="https://api.whatsapp.com/send?phone=6287826907056&text=Halo.. Saya tertarik dengan GreenLiteSpace"
+        href="https://api.whatsapp.com/send?phone=6287826907056&text=Halo.. Saya tertarik dengan GreenLitSpace"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-40"

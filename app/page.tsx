@@ -1,11 +1,12 @@
+// app/page.tsx
 import Header from "@/components/header"
 import HeroBanner from "@/components/hero-banner"
 import IntroSection from "@/components/intro-section"
-import ProductShowcase from "@/components/product-showcase"
+// import ProductShowcase from "@/components/product-showcase" // ← COMMENT INI
 import AboutSection from "@/components/about-section"
 import FacilitiesSection from "@/components/facilities-section"
 import Footer from "@/components/footer"
-import BintaroContent from "@/components/bintaro-content" // BUAT KOMPONEN BARU
+import BintaroContent from "@/components/bintaro-content"
 
 export default function Home() {
   return (
@@ -14,14 +15,8 @@ export default function Home() {
       <section id="home">
         <HeroBanner />
       </section>
-      
-      {/* ===== KONTEN BINTARO LANGSUNG DI HOMEPAGE ===== */}
-      <BintaroContent />
-      
+      <BintaroContent /> {/* Konten Bintaro */}
       <IntroSection />
-      <section id="lokasi">
-        <ProductShowcase />
-      </section>
       <section id="tentang-kami">
         <AboutSection />
       </section>
