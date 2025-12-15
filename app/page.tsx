@@ -5,6 +5,7 @@ import ProductShowcase from "@/components/product-showcase"
 import AboutSection from "@/components/about-section"
 import FacilitiesSection from "@/components/facilities-section"
 import Footer from "@/components/footer"
+import BintaroContent from "@/components/bintaro-content" // BUAT KOMPONEN BARU
 
 export default function Home() {
   return (
@@ -13,6 +14,10 @@ export default function Home() {
       <section id="home">
         <HeroBanner />
       </section>
+      
+      {/* ===== KONTEN BINTARO LANGSUNG DI HOMEPAGE ===== */}
+      <BintaroContent />
+      
       <IntroSection />
       <section id="lokasi">
         <ProductShowcase />

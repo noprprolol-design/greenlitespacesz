@@ -34,7 +34,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="text-3xl font-bold bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent group-hover:from-cyan-700 group-hover:to-teal-700 transition">
-              GreenLiteSpace
+              GreenLitSpace
             </div>
           </Link>
 
