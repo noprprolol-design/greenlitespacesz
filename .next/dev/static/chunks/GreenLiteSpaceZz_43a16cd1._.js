@@ -419,197 +419,194 @@ const slides = [
         id: 1,
         title: "Bintaro",
         subtitle: "Perpustakaan Modern dengan Arsitektur Berkelanjutan",
-        image: "/bintaroy.jpg",
-        features: [
-            "Ruang Baca Luas",
-            "Koleksi Lengkap"
-        ],
+        type: "video",
+        video: "/lolz.mp4",
         location: "Lokasi Strategis Bintaro"
     },
     {
         id: 2,
         title: "Pamulang",
         subtitle: "Pusat Pembelajaran dengan Fasilitas Terkini",
+        type: "image",
         image: "/pamulang-library-sustainable-design.jpg",
-        features: [
-            "Teknologi Digital",
-            "Area Nyaman"
-        ],
         location: "Pusat Kota Pamulang"
     },
     {
         id: 3,
         title: "Ciputat",
         subtitle: "Perpustakaan Premium dengan Desain Elegan",
+        type: "image",
         image: "/bintarok.jpg",
-        features: [
-            "Fasilitas Lengkap",
-            "Suasana Tenang"
-        ],
         location: "Lokasi Premium Ciputat"
     }
 ];
 function HeroBanner() {
     _s();
     const [current, setCurrent] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "HeroBanner.useEffect": ()=>{
-            const timer = setInterval({
-                "HeroBanner.useEffect.timer": ()=>{
-                    setCurrent({
-                        "HeroBanner.useEffect.timer": (prev)=>(prev + 1) % slides.length
-                    }["HeroBanner.useEffect.timer"]);
-                }
-            }["HeroBanner.useEffect.timer"], 5000);
-            return ({
-                "HeroBanner.useEffect": ()=>clearInterval(timer)
-            })["HeroBanner.useEffect"];
-        }
-    }["HeroBanner.useEffect"], []);
+    // ===== SWIPE STATE =====
+    const touchStartX = (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const touchEndX = (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const next = ()=>setCurrent((prev)=>(prev + 1) % slides.length);
     const prev = ()=>setCurrent((prev)=>(prev - 1 + slides.length) % slides.length);
+    // ===== TOUCH HANDLERS =====
+    const handleTouchStart = (e)=>{
+        touchStartX.current = e.touches[0].clientX;
+    };
+    const handleTouchMove = (e)=>{
+        touchEndX.current = e.touches[0].clientX;
+    };
+    const handleTouchEnd = ()=>{
+        if (!touchStartX.current || !touchEndX.current) return;
+        const distance = touchStartX.current - touchEndX.current;
+        if (distance > 50) next();
+        if (distance < -50) prev();
+        touchStartX.current = null;
+        touchEndX.current = null;
+    };
     const slide = slides[current];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px] overflow-hidden bg-gradient-to-r from-primary to-secondary",
+        className: "relative h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden",
+        onTouchStart: handleTouchStart,
+        onTouchMove: handleTouchMove,
+        onTouchEnd: handleTouchEnd,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    src: slide.image || "/placeholder.svg",
-                    alt: slide.title,
-                    fill: true,
-                    className: "object-cover opacity-60"
-                }, void 0, false, {
-                    fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                    lineNumber: 53,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                className: "absolute inset-0 z-0",
+                children: [
+                    slide.type === "video" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                        src: slide.video,
+                        autoPlay: true,
+                        muted: true,
+                        loop: true,
+                        playsInline: true,
+                        preload: "auto",
+                        className: "w-full h-full object-cover"
+                    }, void 0, false, {
+                        fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                        lineNumber: 80,
+                        columnNumber: 11
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        src: slide.image,
+                        alt: slide.title,
+                        fill: true,
+                        priority: true,
+                        className: "object-cover"
+                    }, void 0, false, {
+                        fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                        lineNumber: 90,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute inset-0 bg-black/40"
+                    }, void 0, false, {
+                        fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                        lineNumber: 100,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                lineNumber: 52,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative h-full flex items-center",
+                className: "relative z-10 h-full flex items-center",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-white",
+                    className: "max-w-7xl mx-auto px-6 text-white",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-4xl md:text-6xl font-bold mb-4",
+                            children: slide.title
+                        }, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                            lineNumber: 106,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-lg md:text-xl mb-4",
+                            children: slide.subtitle
+                        }, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                            lineNumber: 109,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "flex items-center gap-2 text-sm",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4",
-                                    children: slide.title
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "w-3 h-3 bg-red-500 rounded-full"
                                 }, void 0, false, {
                                     fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                                    lineNumber: 61,
-                                    columnNumber: 15
+                                    lineNumber: 113,
+                                    columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-base sm:text-lg md:text-xl mb-4 sm:mb-6",
-                                    children: slide.subtitle
-                                }, void 0, false, {
-                                    fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                                    lineNumber: 62,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm sm:text-base mb-4 flex items-center gap-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "inline-block w-3 h-3 bg-red-500 rounded-full"
-                                        }, void 0, false, {
-                                            fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                                            lineNumber: 64,
-                                            columnNumber: 17
-                                        }, this),
-                                        slide.location
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                                    lineNumber: 63,
-                                    columnNumber: 15
-                                }, this)
+                                slide.location
                             ]
                         }, void 0, true, {
                             fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                            lineNumber: 60,
-                            columnNumber: 13
+                            lineNumber: 112,
+                            columnNumber: 11
                         }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                        lineNumber: 59,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                    lineNumber: 58,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                lineNumber: 57,
+                lineNumber: 104,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: prev,
-                className: "absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 bg-white/30 hover:bg-white/50 text-white p-1.5 sm:p-2 rounded-full transition",
-                "aria-label": "Previous slide",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {
-                    size: 20,
-                    className: "sm:w-6 sm:h-6"
-                }, void 0, false, {
+                className: "absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-2 rounded-full",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {}, void 0, false, {
                     fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                    lineNumber: 78,
+                    lineNumber: 124,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                lineNumber: 73,
+                lineNumber: 120,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: next,
-                className: "absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 bg-white/30 hover:bg-white/50 text-white p-1.5 sm:p-2 rounded-full transition",
-                "aria-label": "Next slide",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                    size: 20,
-                    className: "sm:w-6 sm:h-6"
-                }, void 0, false, {
+                className: "absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/50 text-white p-2 rounded-full",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {}, void 0, false, {
                     fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                    lineNumber: 85,
+                    lineNumber: 131,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                lineNumber: 80,
+                lineNumber: 127,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10",
-                children: slides.map((_, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setCurrent(idx),
-                        className: `w-2 h-2 rounded-full transition ${idx === current ? "bg-white" : "bg-white/50"}`,
-                        "aria-label": `Go to slide ${idx + 1}`
-                    }, idx, false, {
+                className: "absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex gap-2",
+                children: slides.map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setCurrent(i),
+                        className: `w-2.5 h-2.5 rounded-full ${i === current ? "bg-white" : "bg-white/50"}`
+                    }, i, false, {
                         fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                        lineNumber: 91,
+                        lineNumber: 137,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-                lineNumber: 89,
+                lineNumber: 135,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
-        lineNumber: 50,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 }
-_s(HeroBanner, "Ce5S7Zpl2S4YgGoPn+G4m52qKq8=");
+_s(HeroBanner, "pLVnM4KnLZAlOyzDxgWOfJ57hUU=");
 _c = HeroBanner;
 var _c;
 __turbopack_context__.k.register(_c, "HeroBanner");
