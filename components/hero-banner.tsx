@@ -38,11 +38,8 @@ export default function HeroBanner() {
   const touchStartX = useRef<number | null>(null)
   const touchEndX = useRef<number | null>(null)
 
-  const next = () =>
-    setCurrent((prev) => (prev + 1) % slides.length)
-
-  const prev = () =>
-    setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
+  const next = () => setCurrent((prev) => (prev + 1) % slides.length)
+  const prev = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
 
   // ===== TOUCH HANDLERS =====
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -55,12 +52,9 @@ export default function HeroBanner() {
 
   const handleTouchEnd = () => {
     if (!touchStartX.current || !touchEndX.current) return
-
     const distance = touchStartX.current - touchEndX.current
-
     if (distance > 50) next()
     if (distance < -50) prev()
-
     touchStartX.current = null
     touchEndX.current = null
   }
@@ -95,21 +89,19 @@ export default function HeroBanner() {
             className="object-cover"
           />
         )}
-
-        {/* overlay */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* ===== CONTENT ===== */}
-      <div className="relative z-10 h-full flex items-center">
-        <div className="max-w-7xl mx-auto px-6 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+      {/* ===== CONTENT (CENTERED) ===== */}
+      <div className="relative z-10 h-full flex items-center justify-center">
+        <div className="max-w-2xl px-6 text-white text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-3 sm:mb-4">
             {slide.title}
           </h1>
-          <p className="text-lg md:text-xl mb-4">
+          <p className="text-base sm:text-lg md:text-xl mb-4">
             {slide.subtitle}
           </p>
-          <p className="flex items-center gap-2 text-sm">
+          <p className="flex items-center justify-center gap-2 text-sm">
             <span className="w-3 h-3 bg-red-500 rounded-full" />
             {slide.location}
           </p>
