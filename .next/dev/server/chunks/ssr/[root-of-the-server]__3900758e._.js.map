@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///D:/GreenLiteSpaceZz/app/perpustakaan/lihat2/page.tsx"],"sourcesContent":["export default function LihatSemuaPerpustakaan() {\r\n  return (\r\n    <div className=\"min-h-screen flex items-center justify-center\">\r\n      <h1 className=\"text-3xl font-bold\">\r\n        Semua Perpustakaan\r\n      </h1>\r\n    </div>\r\n  )\r\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,kQAAC;QAAI,WAAU;kBACb,cAAA,kQAAC;YAAG,WAAU;sBAAqB;;;;;;;;;;;AAKzC"}}]
+}

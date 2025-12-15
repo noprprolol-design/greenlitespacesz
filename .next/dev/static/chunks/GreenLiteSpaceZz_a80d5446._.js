@@ -1,0 +1,1576 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/GreenLiteSpaceZz/lib/utils.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cn",
+    ()=>cn
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-client] (ecmascript)");
+;
+;
+function cn(...inputs) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["clsx"])(inputs));
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/GreenLiteSpaceZz/components/ui/button.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Button",
+    ()=>Button,
+    "buttonVariants",
+    ()=>buttonVariants
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/@radix-ui/react-slot/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/class-variance-authority/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/lib/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+;
+const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
+    variants: {
+        variant: {
+            default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+            destructive: 'bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60',
+            outline: 'border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50',
+            secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
+            ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
+            link: 'text-primary underline-offset-4 hover:underline'
+        },
+        size: {
+            default: 'h-9 px-4 py-2 has-[>svg]:px-3',
+            sm: 'h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5',
+            lg: 'h-10 rounded-md px-6 has-[>svg]:px-4',
+            icon: 'size-9',
+            'icon-sm': 'size-8',
+            'icon-lg': 'size-10'
+        }
+    },
+    defaultVariants: {
+        variant: 'default',
+        size: 'default'
+    }
+});
+function Button({ className, variant, size, asChild = false, ...props }) {
+    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Slot"] : 'button';
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Comp, {
+        "data-slot": "button",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])(buttonVariants({
+            variant,
+            size,
+            className
+        })),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/GreenLiteSpaceZz/components/ui/button.tsx",
+        lineNumber: 52,
+        columnNumber: 5
+    }, this);
+}
+_c = Button;
+;
+var _c;
+__turbopack_context__.k.register(_c, "Button");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/GreenLiteSpaceZz/components/header.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Header
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/menu.js [app-client] (ecmascript) <export default as Menu>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/house.js [app-client] (ecmascript) <export default as Home>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/info.js [app-client] (ecmascript) <export default as Info>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/building-2.js [app-client] (ecmascript) <export default as Building2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/log-in.js [app-client] (ecmascript) <export default as LogIn>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/user-plus.js [app-client] (ecmascript) <export default as UserPlus>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/components/ui/button.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+function Header() {
+    _s();
+    const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const navItems = [
+        {
+            label: "Home",
+            href: "#home",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"]
+        },
+        {
+            label: "Tentang Kami",
+            href: "#tentang-kami",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"]
+        },
+        {
+            label: "Fasilitas",
+            href: "#fasilitas",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"]
+        },
+        {
+            label: "Lokasi",
+            href: "#lokasi",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"]
+        }
+    ];
+    const handleNavClick = (e, href)=>{
+        e.preventDefault();
+        setIsOpen(false);
+        const element = document.querySelector(href);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+        className: "sticky top-0 z-50 bg-gradient-to-r from-white via-white to-cyan-50 shadow-lg border-b border-cyan-100",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex justify-between items-center h-20",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/",
+                            className: "flex items-center gap-2 group",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-3xl font-bold bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent group-hover:from-cyan-700 group-hover:to-teal-700 transition",
+                                children: "GreenLitSpace"
+                            }, void 0, false, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                            className: "hidden md:flex items-center gap-1",
+                            children: [
+                                navItems.map((item)=>{
+                                    const Icon = item.icon;
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: item.href,
+                                        onClick: (e)=>handleNavClick(e, item.href),
+                                        className: "flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-cyan-600 hover:bg-cyan-50 rounded-lg transition-all duration-300 font-medium cursor-pointer",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                                size: 18
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                                lineNumber: 52,
+                                                columnNumber: 19
+                                            }, this),
+                                            item.label
+                                        ]
+                                    }, item.label, true, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                        lineNumber: 46,
+                                        columnNumber: 17
+                                    }, this);
+                                }),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-2 ml-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/login",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                variant: "ghost",
+                                                className: "flex items-center gap-2 text-gray-700 hover:text-cyan-600",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__["LogIn"], {
+                                                        size: 18
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                                        lineNumber: 60,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    "Masuk"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                                lineNumber: 59,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                            lineNumber: 58,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/register",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                className: "flex items-center gap-2 bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-700 hover:to-teal-700",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__["UserPlus"], {
+                                                        size: 18
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                                        lineNumber: 66,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    "Daftar"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                                lineNumber: 65,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                            lineNumber: 64,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                    lineNumber: 57,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            className: "md:hidden p-2 hover:bg-cyan-50 rounded-lg transition",
+                            onClick: ()=>setIsOpen(!isOpen),
+                            children: isOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                size: 24,
+                                className: "text-cyan-600"
+                            }, void 0, false, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                lineNumber: 75,
+                                columnNumber: 23
+                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
+                                size: 24,
+                                className: "text-cyan-600"
+                            }, void 0, false, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                lineNumber: 75,
+                                columnNumber: 67
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                            lineNumber: 74,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                    lineNumber: 33,
+                    columnNumber: 9
+                }, this),
+                isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                    className: "md:hidden pb-4 space-y-2 border-t border-cyan-100 pt-4",
+                    children: [
+                        navItems.map((item)=>{
+                            const Icon = item.icon;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: item.href,
+                                onClick: (e)=>handleNavClick(e, item.href),
+                                className: "flex items-center gap-3 px-4 py-3 text-gray-700 hover:text-cyan-600 hover:bg-cyan-50 rounded-lg transition-all duration-300 font-medium cursor-pointer",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                        size: 20
+                                    }, void 0, false, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                        lineNumber: 91,
+                                        columnNumber: 19
+                                    }, this),
+                                    item.label
+                                ]
+                            }, item.label, true, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                lineNumber: 85,
+                                columnNumber: 17
+                            }, this);
+                        }),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "pt-4 border-t border-cyan-100 space-y-2",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/login",
+                                    className: "block",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                        variant: "outline",
+                                        className: "w-full flex items-center justify-center gap-2 bg-transparent",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$in$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LogIn$3e$__["LogIn"], {
+                                                size: 18
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                                lineNumber: 99,
+                                                columnNumber: 19
+                                            }, this),
+                                            "Masuk"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                        lineNumber: 98,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                    lineNumber: 97,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/register",
+                                    className: "block",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                        className: "w-full flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-600 to-teal-600 hover:from-cyan-700 hover:to-teal-700",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__["UserPlus"], {
+                                                size: 18
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                                lineNumber: 105,
+                                                columnNumber: 19
+                                            }, this),
+                                            "Daftar"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                        lineNumber: 104,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                                    lineNumber: 103,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                            lineNumber: 96,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+                    lineNumber: 81,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+            lineNumber: 32,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/GreenLiteSpaceZz/components/header.tsx",
+        lineNumber: 31,
+        columnNumber: 5
+    }, this);
+}
+_s(Header, "+sus0Lb0ewKHdwiUhiTAJFoFyQ0=");
+_c = Header;
+var _c;
+__turbopack_context__.k.register(_c, "Header");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/GreenLiteSpaceZz/components/hero-banner.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>HeroBanner
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+"use client";
+;
+function HeroBanner() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "relative h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 z-0",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                        src: "/lolz.mp4",
+                        autoPlay: true,
+                        muted: true,
+                        loop: true,
+                        playsInline: true,
+                        preload: "auto",
+                        className: "w-full h-full object-cover"
+                    }, void 0, false, {
+                        fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute inset-0 bg-black/40"
+                    }, void 0, false, {
+                        fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative z-10 h-full flex items-center justify-center",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-2xl px-6 text-white text-center"
+                }, void 0, false, {
+                    fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/GreenLiteSpaceZz/components/hero-banner.tsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, this);
+}
+_c = HeroBanner;
+var _c;
+__turbopack_context__.k.register(_c, "HeroBanner");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/GreenLiteSpaceZz/components/intro-section.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>IntroSection
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+"use client";
+;
+function IntroSection() {
+    const scrollToAbout = ()=>{
+        const aboutSection = document.getElementById("tentang-kami");
+        if (aboutSection) {
+            aboutSection.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "py-12 md:py-16 bg-gradient-to-br from-cyan-50 to-teal-50",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        }, void 0, false, {
+            fileName: "[project]/GreenLiteSpaceZz/components/intro-section.tsx",
+            lineNumber: 13,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/GreenLiteSpaceZz/components/intro-section.tsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+}
+_c = IntroSection;
+var _c;
+__turbopack_context__.k.register(_c, "IntroSection");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/GreenLiteSpaceZz/components/about-section.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>AboutSection
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+"use client";
+;
+;
+function AboutSection() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "tentang-kami",
+        className: "py-12 md:py-16 bg-white",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative order-2 md:order-1",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative w-full aspect-video rounded-lg sm:rounded-2xl overflow-hidden bg-gray-200",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                                width: "100%",
+                                height: "100%",
+                                src: "https://www.youtube.com/embed/Cy0o9ijfgck",
+                                title: "GreenLiteSpace Video",
+                                frameBorder: "0",
+                                allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+                                allowFullScreen: true,
+                                className: "w-full h-full"
+                            }, void 0, false, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+                                lineNumber: 13,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+                            lineNumber: 12,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+                        lineNumber: 11,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "order-1 md:order-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6",
+                                children: "Selangkah Kemana Saja"
+                            }, void 0, false, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+                                lineNumber: 28,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm sm:text-base text-gray-600 mb-6 leading-relaxed",
+                                style: {
+                                    textAlign: "justify"
+                                },
+                                children: "Bukan hanya sebuah rumah, GreenLitSpace membangun tempat tinggal yang terintegrasi dengan berbagai fasilitas. Bagai sebuah orkestra yang dilengkapi dengan konsep co-living yang terjalin harmonis, hunian di GreenLitSpace sangat sesuai dengan era milenium saat ini."
+                            }, void 0, false, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+                                lineNumber: 31,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/tentang-kami",
+                                className: "inline-block bg-gradient-to-r from-cyan-600 to-teal-600 text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base rounded-full hover:shadow-lg hover:scale-105 transition-all",
+                                children: "Selengkapnya >"
+                            }, void 0, false, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+                        lineNumber: 27,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+                lineNumber: 9,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+            lineNumber: 8,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/GreenLiteSpaceZz/components/about-section.tsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, this);
+}
+_c = AboutSection;
+var _c;
+__turbopack_context__.k.register(_c, "AboutSection");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/GreenLiteSpaceZz/components/facilities-section.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>FacilitiesSection
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Book$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/book.js [app-client] (ecmascript) <export default as Book>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$leaf$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Leaf$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/leaf.js [app-client] (ecmascript) <export default as Leaf>");
+"use client";
+;
+;
+const facilities = [
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Book$3e$__["Book"],
+        title: "Ruang Baca Nyaman",
+        description: "Area membaca yang tenang dengan pencahayaan optimal, dirancang untuk meningkatkan fokus dan kenyamanan pengunjung."
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"],
+        title: "Perpustakaan Digital",
+        description: "Akses ke ribuan buku digital, jurnal, dan koleksi multimedia yang bisa digunakan melalui perangkat perpustakaan ataupun gadget pribadi."
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
+        title: "Area Komputer & Internet Cepat",
+        description: "Fasilitas komputer lengkap dengan Wi-Fi berkecepatan tinggi untuk riset, pengetikan, belajar online, maupun kegiatan akademik lainnya."
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$leaf$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Leaf$3e$__["Leaf"],
+        title: "Ruang Diskusi ",
+        description: "Tempat bagi komunitas, pelajar, dan pekerja untuk berdiskusi, mengerjakan proyek, atau mengadakan kegiatan belajar kelompok."
+    }
+];
+function FacilitiesSection() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "py-12 md:py-16 bg-gray-50",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center",
+                    children: "SARANA DAN PRASARANA"
+                }, void 0, false, {
+                    fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+                    lineNumber: 33,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid md:grid-cols-3 gap-8",
+                    children: facilities.map((facility, idx)=>{
+                        const Icon = facility.icon;
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-white p-6 rounded-lg shadow hover:shadow-lg transition",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-start gap-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex-shrink-0",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                            className: "w-8 h-8 text-primary"
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+                                        lineNumber: 40,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "font-semibold text-black-900 mb-2",
+                                                children: facility.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+                                                lineNumber: 44,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-black-600 text-sm",
+                                                children: facility.description
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+                                                lineNumber: 45,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+                                        lineNumber: 43,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+                                lineNumber: 39,
+                                columnNumber: 17
+                            }, this)
+                        }, idx, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+                            lineNumber: 38,
+                            columnNumber: 15
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+            lineNumber: 32,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/GreenLiteSpaceZz/components/facilities-section.tsx",
+        lineNumber: 31,
+        columnNumber: 5
+    }, this);
+}
+_c = FacilitiesSection;
+var _c;
+__turbopack_context__.k.register(_c, "FacilitiesSection");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/GreenLiteSpaceZz/components/footer.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Footer
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/message-circle.js [app-client] (ecmascript) <export default as MessageCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
+"use client";
+;
+;
+;
+function Footer() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+        className: "bg-dark-blue text-black",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid md:grid-cols-4 gap-8 mb-8",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-xl font-bold mb-4 text-black",
+                                        children: "GreenLitSpace"
+                                    }, void 0, false, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 14,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-black text-sm mb-4",
+                                        children: "Membangun tempat literasi yang terintegrasi dengan berbagai fasilitas modern."
+                                    }, void 0, false, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 15,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex gap-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "#",
+                                                className: "text-black hover:opacity-70 transition",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"], {
+                                                    size: 20
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 20,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "#",
+                                                className: "text-black hover:opacity-70 transition",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                    size: 20
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 23,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 22,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "#",
+                                                className: "text-black hover:opacity-70 transition",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                    size: 20
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 26,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 25,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 18,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                lineNumber: 13,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        className: "font-semibold mb-4 text-black",
+                                        children: "Navigasi"
+                                    }, void 0, false, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 33,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "space-y-2 text-sm text-black",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "#",
+                                                    className: "hover:opacity-70 transition",
+                                                    children: "Tentang Kami"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 35,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 35,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "#",
+                                                    className: "hover:opacity-70 transition",
+                                                    children: "Produk"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 36,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 36,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "#",
+                                                    className: "hover:opacity-70 transition",
+                                                    children: "Berita"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 37,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 37,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "#",
+                                                    className: "hover:opacity-70 transition",
+                                                    children: "Fasilitas"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 38,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 38,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 34,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                lineNumber: 32,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        className: "font-semibold mb-4 text-black",
+                                        children: "Produk"
+                                    }, void 0, false, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 44,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "space-y-2 text-sm text-black",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "#",
+                                                    className: "hover:opacity-70 transition",
+                                                    children: "Jasa"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 46,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 46,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "#",
+                                                    className: "hover:opacity-70 transition",
+                                                    children: "Bangunan kami"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 47,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 47,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "#",
+                                                    className: "hover:opacity-70 transition",
+                                                    children: "Produk Terbaru"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 48,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 48,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: "#",
+                                                    className: "hover:opacity-70 transition",
+                                                    children: "Promo"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                    lineNumber: 49,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 49,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                lineNumber: 43,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        className: "font-semibold mb-4 text-black",
+                                        children: "Hubungi Kami"
+                                    }, void 0, false, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-3 text-sm text-black",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-start gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                        size: 16,
+                                                        className: "mt-1 flex-shrink-0"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                        lineNumber: 58,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: "+62 878 2690 7056"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                        lineNumber: 59,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 57,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-start gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                        size: 16,
+                                                        className: "mt-1 flex-shrink-0"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                        lineNumber: 62,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: "GreenLitSpace@Gmail.com"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                        lineNumber: 63,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 61,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-start gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                                        size: 16,
+                                                        className: "mt-1 flex-shrink-0"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                        lineNumber: 66,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: "Jakarta, Indonesia"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                        lineNumber: 67,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                                lineNumber: 65,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                lineNumber: 54,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                        lineNumber: 10,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-black",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                children: "© 2025 GreenLitSpace. All rights reserved."
+                            }, void 0, false, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                lineNumber: 76,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex gap-6 mt-4 md:mt-0",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "#",
+                                        className: "hover:opacity-70 transition",
+                                        children: "Privacy Policy"
+                                    }, void 0, false, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 78,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "#",
+                                        className: "hover:opacity-70 transition",
+                                        children: "Terms of Service"
+                                    }, void 0, false, {
+                                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                        lineNumber: 79,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                                lineNumber: 77,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                        lineNumber: 75,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: "https://api.whatsapp.com/send?phone=6287826907056&text=Halo.. Saya tertarik dengan GreenLitSpace",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-40",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"], {
+                    size: 24
+                }, void 0, false, {
+                    fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                    lineNumber: 91,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+                lineNumber: 85,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/GreenLiteSpaceZz/components/footer.tsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, this);
+}
+_c = Footer;
+var _c;
+__turbopack_context__.k.register(_c, "Footer");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/GreenLiteSpaceZz/components/bintaro-content.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>BintaroContent
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/GreenLiteSpaceZz/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+"use client";
+;
+function BintaroContent() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "bintaro",
+        className: "py-12 md:py-16 bg-gray-50",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mb-16",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "text-3xl font-bold text-gray-900 mb-6 text-center",
+                            children: "Tentang GreenLitSpace"
+                        }, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                            lineNumber: 10,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "text-gray-600",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "mb-6 leading-relaxed",
+                                style: {
+                                    textAlign: "justify"
+                                },
+                                children: "GreenLitSpace adalah pengembang perpustakaan modern yang berkomitmen untuk menghadirkan ruang belajar yang inovatif, nyaman, dan berkelanjutan. Kami merancang perpustakaan yang tidak hanya berfungsi sebagai tempat membaca, tetapi juga sebagai ruang inspiratif yang mendukung peningkatan literasi, kreativitas, dan kolaborasi di berbagai komunitas. Dengan mengutamakan desain ramah lingkungan serta integrasi teknologi terkini, GreenLiteSpace berfokus pada penciptaan perpustakaan masa depan yang relevan dengan kebutuhan generasi saat ini. Setiap proyek yang kami kembangkan memenuhi standar kualitas tinggi untuk memberikan pengalaman belajar yang aman, nyaman, dan efektif bagi seluruh pengguna."
+                            }, void 0, false, {
+                                fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                lineNumber: 13,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mb-16",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "text-3xl font-bold text-gray-900 mb-8 text-center",
+                            children: "Visi & Misi"
+                        }, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                            lineNumber: 23,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col md:flex-row justify-center items-center gap-8",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mb-6 mx-auto",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-white text-2xl",
+                                                children: "🎯"
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                                lineNumber: 27,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 26,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-2xl font-bold text-gray-900 mb-4 text-center",
+                                            children: "Visi Kami"
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 29,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-gray-600 leading-relaxed",
+                                            style: {
+                                                textAlign: "justify"
+                                            },
+                                            children: "Menjadi pengembang perpustakaan modern terdepan di Indonesia yang mengintegrasikan teknologi, kenyamanan, dan keberlanjutan dalam setiap proyeknya untuk menciptakan ruang belajar yang inspiratif."
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 30,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                    lineNumber: 25,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "hidden md:block text-gray-300 text-4xl",
+                                    children: "•"
+                                }, void 0, false, {
+                                    fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                    lineNumber: 36,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-md",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mb-6 mx-auto",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-white text-2xl",
+                                                children: "🏆"
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                                lineNumber: 40,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 39,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-2xl font-bold text-gray-900 mb-4 text-center",
+                                            children: "Misi Kami"
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 42,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-gray-600 leading-relaxed",
+                                            style: {
+                                                textAlign: "justify"
+                                            },
+                                            children: "Menyediakan perpustakaan berkualitas tinggi dengan fasilitas lengkap yang terintegrasi dengan lingkungan sekitar, memberikan nilai investasi terbaik, dan membangun komunitas pembelajar yang solid."
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 43,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                            lineNumber: 24,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mb-16",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "text-3xl font-bold text-gray-900 mb-8 text-center",
+                            children: "Keunggulan Kami"
+                        }, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                            lineNumber: 54,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid md:grid-cols-3 gap-8",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-20 h-20 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-white text-3xl",
+                                                children: "🏢"
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                                lineNumber: 58,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 57,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-xl font-bold text-gray-900 mb-3 text-center",
+                                            children: "Lokasi Strategis"
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 60,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-gray-600",
+                                            style: {
+                                                textAlign: "justify"
+                                            },
+                                            children: "Berada di area premium dengan aksesibilitas tinggi ke berbagai fasilitas publik dan komersial"
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 61,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                    lineNumber: 56,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-20 h-20 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-white text-3xl",
+                                                children: "👥"
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                                lineNumber: 67,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 66,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-xl font-bold text-gray-900 mb-3 text-center",
+                                            children: "Konsep Co-Living"
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 69,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-gray-600",
+                                            style: {
+                                                textAlign: "justify"
+                                            },
+                                            children: "Desain modern yang mendukung interaksi sosial dan kolaborasi antar penghuni"
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 70,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                    lineNumber: 65,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-20 h-20 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-white text-3xl",
+                                                children: "🏆"
+                                            }, void 0, false, {
+                                                fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                                lineNumber: 76,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 75,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-xl font-bold text-gray-900 mb-3 text-center",
+                                            children: "Fasilitas Lengkap"
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 78,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$GreenLiteSpaceZz$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-gray-600",
+                                            style: {
+                                                textAlign: "justify"
+                                            },
+                                            children: "Dilengkapi dengan berbagai fasilitas penunjang untuk kenyamanan dan produktivitas maksimal"
+                                        }, void 0, false, {
+                                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                            lineNumber: 79,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                                    lineNumber: 74,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                            lineNumber: 55,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+            lineNumber: 6,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/GreenLiteSpaceZz/components/bintaro-content.tsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = BintaroContent;
+var _c;
+__turbopack_context__.k.register(_c, "BintaroContent");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=GreenLiteSpaceZz_a80d5446._.js.map
