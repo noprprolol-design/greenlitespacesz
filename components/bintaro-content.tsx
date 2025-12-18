@@ -66,9 +66,9 @@ export default function BintaroContent() {
               <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-3xl">👥</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Konsep Co-Living</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Desain Co-Living</h3>
               <p className="text-gray-600" style={{ textAlign: "justify" }}>
-                Desain modern yang mendukung interaksi sosial dan kolaborasi antar penghuni
+                Desain modern yang mendukung interaksi sosial dan kolaborasi antar manusia 
               </p>
             </div>
             <div className="text-center">
