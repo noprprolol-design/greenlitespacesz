@@ -29,8 +29,8 @@ export default function AboutSection() {
               Selangkah Kemana Saja
             </h2>
             <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed"style={{ textAlign: "justify" }}>
-              Bukan hanya sebuah rumah, GreenLitSpace membangun tempat tinggal yang terintegrasi dengan berbagai
-              fasilitas. Bagai sebuah orkestra yang dilengkapi dengan konsep co-living yang terjalin harmonis, hunian di
+              Bukan hanya sebuah perpustakaan, GreenLitSpace membangun rasa co living yang terintegrasi dengan berbagai
+              fasilitas. Bagai sebuah orkestra yang dilengkapi dengan desain co-living yang terjalin harmonis, hunian di
               GreenLitSpace sangat sesuai dengan era milenium saat ini.
             </p>
             <Link
